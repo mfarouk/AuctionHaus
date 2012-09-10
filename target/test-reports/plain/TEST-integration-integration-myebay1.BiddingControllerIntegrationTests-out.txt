@@ -1,0 +1,20 @@
+--Output from testInvalidBiddingSave--
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: insert into listing (id, version, date_created, description, end_time, last_updated, name, number_of_notifications, seller_id, starting_bid_price) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?

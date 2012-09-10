@@ -1,0 +1,10 @@
+Testsuite: myebay1.BiddingTests
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.093 sec
+------------- Standard Output ---------------
+--Output from testRequiredProperties--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testRequiredProperties--
+------------- ---------------- ---------------
+
+Testcase: testRequiredProperties took 0.046 sec

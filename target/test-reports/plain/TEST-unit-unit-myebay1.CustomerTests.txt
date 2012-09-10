@@ -1,0 +1,19 @@
+Testsuite: myebay1.CustomerTests
+Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.203 sec
+------------- Standard Output ---------------
+--Output from testCustomerMissingProperty--
+--Output from testCustomerInvalidEmailSave--
+--Output from testPasswordLength--
+--Output from testValidCustomerSave--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCustomerMissingProperty--
+--Output from testCustomerInvalidEmailSave--
+--Output from testPasswordLength--
+--Output from testValidCustomerSave--
+------------- ---------------- ---------------
+
+Testcase: testCustomerMissingProperty took 0.062 sec
+Testcase: testCustomerInvalidEmailSave took 0.047 sec
+Testcase: testPasswordLength took 0.031 sec
+Testcase: testValidCustomerSave took 0.016 sec

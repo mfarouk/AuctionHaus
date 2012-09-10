@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="vbeliaev-PC" name="myebay1.ListingUnitTests" tests="7" time="0.266" timestamp="2012-04-15T04:30:24">
+  <properties />
+  <testcase classname="myebay1.ListingUnitTests" name="testRequiredProperties" time="0.047" />
+  <testcase classname="myebay1.ListingUnitTests" name="testOptionalDescription" time="0.031" />
+  <testcase classname="myebay1.ListingUnitTests" name="testSellerProperty" time="0.032" />
+  <testcase classname="myebay1.ListingUnitTests" name="testDescriptionLength" time="0.015" />
+  <testcase classname="myebay1.ListingUnitTests" name="testListingNameLength" time="0.015" />
+  <testcase classname="myebay1.ListingUnitTests" name="testWinnerField" time="0.031" />
+  <testcase classname="myebay1.ListingUnitTests" name="testEndTime" time="0.031" />
+  <system-out><![CDATA[--Output from testRequiredProperties--
+--Output from testOptionalDescription--
+--Output from testSellerProperty--
+--Output from testDescriptionLength--
+--Output from testListingNameLength--
+--Output from testWinnerField--
+--Output from testEndTime--
+]]></system-out>
+  <system-err><![CDATA[--Output from testRequiredProperties--
+--Output from testOptionalDescription--
+--Output from testSellerProperty--
+--Output from testDescriptionLength--
+--Output from testListingNameLength--
+--Output from testWinnerField--
+--Output from testEndTime--
+]]></system-err>
+</testsuite>

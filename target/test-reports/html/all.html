@@ -1,0 +1,1031 @@
+<!DOCTYPE html><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+        Unit Test Results
+     - All tests</title>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="report" class="container container_8">
+<div class="grid_6 alpha">
+<div class="grailslogo"></div>
+<h1>
+        Unit Test Results
+     - All tests </h1>
+<p class="intro">
+                        Executed
+                        31
+                        tests
+                    
+                        without a single error or failure!
+                    </p>
+</div>
+<div class="grid_2 omega">
+<nav id="navigationlinks">
+<p>
+<a href="failed.html">
+                    Tests with failure and errors
+                </a>
+</p>
+<p>
+<a href="index.html">
+                    Package summary
+                </a>
+</p>
+<p>
+<a href="all.html">
+                    Show all tests
+                </a>
+</p>
+</nav>
+</div>
+<div class="clear"></div>
+<div class="testsuite success">
+<div class="header">
+<h2>ApiControllerTests</h2>
+<h3>
+                        Executed
+                        3
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCreateCustomer">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCreateCustomer</b>
+</p>
+<p class="summary">Executed in 3.401 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCreateListing">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCreateListing</b>
+</p>
+<p class="summary">Executed in 0.249 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCreateBidding">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCreateBidding</b>
+</p>
+<p class="summary">Executed in 0.312 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testCreateCustomer--
+--Output from testCreateListing--
+--Output from testCreateBidding--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testCreateCustomer--
+--Output from testCreateListing--
+--Output from testCreateBidding--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>BiddingControllerIntegrationTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testInvalidBiddingSave">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testInvalidBiddingSave</b>
+</p>
+<p class="summary">Executed in 0.436 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testInvalidBiddingSave--
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: insert into listing (id, version, date_created, description, end_time, last_updated, name, number_of_notifications, seller_id, starting_bid_price) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testInvalidBiddingSave--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>BiddingControllerTests</h2>
+<h3>
+                        Executed
+                        2
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testValidBiddingSave">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testValidBiddingSave</b>
+</p>
+<p class="summary">Executed in 0.577 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testInvalidBiddingSave">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testInvalidBiddingSave</b>
+</p>
+<p class="summary">Executed in 0.187 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testValidBiddingSave--
+--Output from testInvalidBiddingSave--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testValidBiddingSave--
+--Output from testInvalidBiddingSave--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>BiddingIntegrationTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testBiddingProcess">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testBiddingProcess</b>
+</p>
+<p class="summary">Executed in 0.172 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testBiddingProcess--
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: insert into listing (id, version, date_created, description, end_time, last_updated, name, number_of_notifications, seller_id, starting_bid_price) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: insert into listing (id, version, date_created, description, end_time, last_updated, name, number_of_notifications, seller_id, starting_bid_price) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select listing0_.id as id1_1_, listing0_.version as version1_1_, listing0_.date_created as date3_1_1_, listing0_.description as descript4_1_1_, listing0_.end_time as end5_1_1_, listing0_.last_updated as last6_1_1_, listing0_.name as name1_1_, listing0_.number_of_notifications as number8_1_1_, listing0_.seller_id as seller9_1_1_, listing0_.starting_bid_price as starting10_1_1_, biddings1_.listing_id as listing7_1_3_, biddings1_.id as id3_, biddings1_.id as id2_0_, biddings1_.version as version2_0_, biddings1_.bidder_id as bidder3_2_0_, biddings1_.bidding_price as bidding4_2_0_, biddings1_.date_created as date5_2_0_, biddings1_.last_updated as last6_2_0_, biddings1_.listing_id as listing7_2_0_ from listing listing0_ left outer join bidding biddings1_ on listing0_.id=biddings1_.listing_id where listing0_.id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select bidding0_.id as id2_0_, bidding0_.version as version2_0_, bidding0_.bidder_id as bidder3_2_0_, bidding0_.bidding_price as bidding4_2_0_, bidding0_.date_created as date5_2_0_, bidding0_.last_updated as last6_2_0_, bidding0_.listing_id as listing7_2_0_ from bidding bidding0_ where bidding0_.id=?
+Hibernate: select listing0_.id as id1_1_, listing0_.version as version1_1_, listing0_.date_created as date3_1_1_, listing0_.description as descript4_1_1_, listing0_.end_time as end5_1_1_, listing0_.last_updated as last6_1_1_, listing0_.name as name1_1_, listing0_.number_of_notifications as number8_1_1_, listing0_.seller_id as seller9_1_1_, listing0_.starting_bid_price as starting10_1_1_, biddings1_.listing_id as listing7_1_3_, biddings1_.id as id3_, biddings1_.id as id2_0_, biddings1_.version as version2_0_, biddings1_.bidder_id as bidder3_2_0_, biddings1_.bidding_price as bidding4_2_0_, biddings1_.date_created as date5_2_0_, biddings1_.last_updated as last6_2_0_, biddings1_.listing_id as listing7_2_0_ from listing listing0_ left outer join bidding biddings1_ on listing0_.id=biddings1_.listing_id where listing0_.id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_0_, bidding0_.version as version2_0_, bidding0_.bidder_id as bidder3_2_0_, bidding0_.bidding_price as bidding4_2_0_, bidding0_.date_created as date5_2_0_, bidding0_.last_updated as last6_2_0_, bidding0_.listing_id as listing7_2_0_ from bidding bidding0_ where bidding0_.id=?
+Hibernate: select bidding0_.id as id2_0_, bidding0_.version as version2_0_, bidding0_.bidder_id as bidder3_2_0_, bidding0_.bidding_price as bidding4_2_0_, bidding0_.date_created as date5_2_0_, bidding0_.last_updated as last6_2_0_, bidding0_.listing_id as listing7_2_0_ from bidding bidding0_ where bidding0_.id=?
+Hibernate: select listing0_.id as id1_1_, listing0_.version as version1_1_, listing0_.date_created as date3_1_1_, listing0_.description as descript4_1_1_, listing0_.end_time as end5_1_1_, listing0_.last_updated as last6_1_1_, listing0_.name as name1_1_, listing0_.number_of_notifications as number8_1_1_, listing0_.seller_id as seller9_1_1_, listing0_.starting_bid_price as starting10_1_1_, biddings1_.listing_id as listing7_1_3_, biddings1_.id as id3_, biddings1_.id as id2_0_, biddings1_.version as version2_0_, biddings1_.bidder_id as bidder3_2_0_, biddings1_.bidding_price as bidding4_2_0_, biddings1_.date_created as date5_2_0_, biddings1_.last_updated as last6_2_0_, biddings1_.listing_id as listing7_2_0_ from listing listing0_ left outer join bidding biddings1_ on listing0_.id=biddings1_.listing_id where listing0_.id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select bidding0_.id as id2_0_, bidding0_.version as version2_0_, bidding0_.bidder_id as bidder3_2_0_, bidding0_.bidding_price as bidding4_2_0_, bidding0_.date_created as date5_2_0_, bidding0_.last_updated as last6_2_0_, bidding0_.listing_id as listing7_2_0_ from bidding bidding0_ where bidding0_.id=?
+Hibernate: select bidding0_.id as id2_0_, bidding0_.version as version2_0_, bidding0_.bidder_id as bidder3_2_0_, bidding0_.bidding_price as bidding4_2_0_, bidding0_.date_created as date5_2_0_, bidding0_.last_updated as last6_2_0_, bidding0_.listing_id as listing7_2_0_ from bidding bidding0_ where bidding0_.id=?
+Hibernate: select listing0_.id as id1_1_, listing0_.version as version1_1_, listing0_.date_created as date3_1_1_, listing0_.description as descript4_1_1_, listing0_.end_time as end5_1_1_, listing0_.last_updated as last6_1_1_, listing0_.name as name1_1_, listing0_.number_of_notifications as number8_1_1_, listing0_.seller_id as seller9_1_1_, listing0_.starting_bid_price as starting10_1_1_, biddings1_.listing_id as listing7_1_3_, biddings1_.id as id3_, biddings1_.id as id2_0_, biddings1_.version as version2_0_, biddings1_.bidder_id as bidder3_2_0_, biddings1_.bidding_price as bidding4_2_0_, biddings1_.date_created as date5_2_0_, biddings1_.last_updated as last6_2_0_, biddings1_.listing_id as listing7_2_0_ from listing listing0_ left outer join bidding biddings1_ on listing0_.id=biddings1_.listing_id where listing0_.id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testBiddingProcess--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>BiddingServiceTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testBidOnCompletedItem">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testBidOnCompletedItem</b>
+</p>
+<p class="summary">Executed in 2.277 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testBidOnCompletedItem--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testBidOnCompletedItem--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>BiddingTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testRequiredProperties">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testRequiredProperties</b>
+</p>
+<p class="summary">Executed in 0.046 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testRequiredProperties--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testRequiredProperties--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>Complete_listingJobTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testSomething">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testSomething</b>
+</p>
+<p class="summary">Executed in 0.0 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testSomething--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testSomething--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>CustomerControllerTests</h2>
+<h3>
+                        Executed
+                        3
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCustomerWithBiddingDelete">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCustomerWithBiddingDelete</b>
+</p>
+<p class="summary">Executed in 0.281 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCustomerWithListingDelete">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCustomerWithListingDelete</b>
+</p>
+<p class="summary">Executed in 0.125 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCustomerWithoutListingsAndBiddingsDelete">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCustomerWithoutListingsAndBiddingsDelete</b>
+</p>
+<p class="summary">Executed in 0.124 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testCustomerWithBiddingDelete--
+--Output from testCustomerWithListingDelete--
+--Output from testCustomerWithoutListingsAndBiddingsDelete--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testCustomerWithBiddingDelete--
+--Output from testCustomerWithListingDelete--
+--Output from testCustomerWithoutListingsAndBiddingsDelete--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>CustomerIntegrationTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testNonUniqueEmailSave">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testNonUniqueEmailSave</b>
+</p>
+<p class="summary">Executed in 0.031 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testNonUniqueEmailSave--
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testNonUniqueEmailSave--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>CustomerServiceTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testSomething">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testSomething</b>
+</p>
+<p class="summary">Executed in 0.0 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testSomething--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testSomething--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>CustomerTests</h2>
+<h3>
+                        Executed
+                        4
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCustomerMissingProperty">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCustomerMissingProperty</b>
+</p>
+<p class="summary">Executed in 0.062 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testCustomerInvalidEmailSave">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testCustomerInvalidEmailSave</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testPasswordLength">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testPasswordLength</b>
+</p>
+<p class="summary">Executed in 0.031 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testValidCustomerSave">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testValidCustomerSave</b>
+</p>
+<p class="summary">Executed in 0.016 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testCustomerMissingProperty--
+--Output from testCustomerInvalidEmailSave--
+--Output from testPasswordLength--
+--Output from testValidCustomerSave--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testCustomerMissingProperty--
+--Output from testCustomerInvalidEmailSave--
+--Output from testPasswordLength--
+--Output from testValidCustomerSave--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>ListingControllerTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testRedirectToCreateBidding">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testRedirectToCreateBidding</b>
+</p>
+<p class="summary">Executed in 0.187 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testRedirectToCreateBidding--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testRedirectToCreateBidding--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>ListingIntegrationTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testListingWithBiddingsSave">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testListingWithBiddingsSave</b>
+</p>
+<p class="summary">Executed in 0.172 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testListingWithBiddingsSave--
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: insert into listing (id, version, date_created, description, end_time, last_updated, name, number_of_notifications, seller_id, starting_bid_price) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: update listing set version=?, date_created=?, description=?, end_time=?, last_updated=?, name=?, number_of_notifications=?, seller_id=?, starting_bid_price=? where id=? and version=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.bidder_id as bidder3_2_0_, this_.bidding_price as bidding4_2_0_, this_.date_created as date5_2_0_, this_.last_updated as last6_2_0_, this_.listing_id as listing7_2_0_ from bidding this_ where this_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testListingWithBiddingsSave--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>ListingServiceTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testSomething">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testSomething</b>
+</p>
+<p class="summary">Executed in 0.016 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testSomething--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testSomething--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>ListingUnitTests</h2>
+<h3>
+                        Executed
+                        7
+                        tests
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testRequiredProperties">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testRequiredProperties</b>
+</p>
+<p class="summary">Executed in 0.047 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testOptionalDescription">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testOptionalDescription</b>
+</p>
+<p class="summary">Executed in 0.031 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testSellerProperty">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testSellerProperty</b>
+</p>
+<p class="summary">Executed in 0.032 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testDescriptionLength">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testDescriptionLength</b>
+</p>
+<p class="summary">Executed in 0.015 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testListingNameLength">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testListingNameLength</b>
+</p>
+<p class="summary">Executed in 0.015 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testWinnerField">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testWinnerField</b>
+</p>
+<p class="summary">Executed in 0.031 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testEndTime">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testEndTime</b>
+</p>
+<p class="summary">Executed in 0.031 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testRequiredProperties--
+--Output from testOptionalDescription--
+--Output from testSellerProperty--
+--Output from testDescriptionLength--
+--Output from testListingNameLength--
+--Output from testWinnerField--
+--Output from testEndTime--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testRequiredProperties--
+--Output from testOptionalDescription--
+--Output from testSellerProperty--
+--Output from testDescriptionLength--
+--Output from testListingNameLength--
+--Output from testWinnerField--
+--Output from testEndTime--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>NotificationControllerTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testSomething">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testSomething</b>
+</p>
+<p class="summary">Executed in 0.141 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testSomething--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testSomething--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="testsuite success">
+<div class="header">
+<h2>OnNotificationServiceTests</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="testSomething">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">testSomething</b>
+</p>
+<p class="summary">Executed in 0.016 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">--Output from testSomething--
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">--Output from testSomething--
+</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--
+            Parses JUnit output and associates it with the corresponding test case
+        -->
+<script language="javascript">
+
+
+/**
+ * The JUnit report format is incredibly stuipd in the
+ * sense that it accumulates output from all test methods
+ * into a single xml node.
+ */
+(function() {
+
+    var outputElements = findOutputElements();
+    for (var i in outputElements) {
+        var outputElement = outputElements[i];
+        var textOutput = outputElement.element.firstChild.nodeValue;
+        var header = outputElement.getHeader();
+        appendTestMethodOutput(textOutput, header);
+    }
+
+    function findOutputElements() {
+        var outputElements = [];
+        var preElements = document.getElementsByTagName("pre");
+        for (var i in preElements) {
+            var preElement = preElements[i];
+            var className = preElement.className || "";
+            if (className.indexOf("stdout") >= 0) {
+                var outputElement = new OutputElement(preElement, "output");
+                outputElements.push(outputElement);
+            } else if (className.indexOf("syserr") >= 0) {
+                var outputElement = new OutputElement(preElement, "error");
+                outputElements.push(outputElement);
+            }
+        }
+
+        return outputElements;
+    }
+
+    function OutputElement(element, type) {
+        this.element = element;
+        this.type = type;
+
+        this.getHeader = function() {
+            if (type === "output") {
+                return "System output";
+            } else if ("error") {
+                return "System error";
+            }
+        }
+    }
+
+    function appendTestMethodOutput(text, header) {
+        var testOutput = new TestMethodOutput(header);
+
+        var lines = text.split(/\r\n|\r|\n/);
+        for (var i in lines) {
+            var line = lines[i];
+            var matches = line.match(/^--Output from (.*)--$/);
+            if (matches !== null && matches.length == 2) {
+                testOutput.flushToDom();
+                testOutput.testName = matches[1];
+            } else {
+                testOutput.addLine(line);
+            }
+        }
+
+        testOutput.flushToDom();
+    }
+
+    function TestMethodOutput(header) {
+        this.header = header;
+        this.testName = undefined;
+        this.buffer = "";
+
+        this.addLine = function(line) {
+            this.buffer += line + "\n";
+        }
+
+        this.flushToDom = function() {
+            if (this.testName !== undefined) {
+                var domNode = getTestcaseElementByName(this.testName);
+                if (domNode !== undefined && trimString(this.buffer).length > 0) {
+                    this.appendTo(domNode);
+                }
+
+                this.reset();
+            }
+        }
+
+        this.appendTo = function(domNode) {
+            var node = document.createElement("div");
+            node.innerHTML = '<p><b class="message">' + header + '</b></p>';
+
+            var preNode = document.createElement("pre");
+            preNode.appendChild(document.createTextNode(this.buffer));
+            node.appendChild(preNode);
+
+            var outputContainer = findElementByTagClassAndParent("div", "outputinfo", domNode);
+            outputContainer.appendChild(node);
+        }
+
+        this.reset = function() {
+            this.methodName = undefined;
+            this.buffer = "";
+        }
+    }
+
+    function getTestcaseElementByName(name) {
+        var divElements = document.getElementsByTagName("div");
+        var elementCount = divElements.length;
+        for (var i=0; i<elementCount; i++) {
+            var el = divElements[i];
+            if (el.getAttribute("data-name") === name) {
+                return el;
+            }
+        }
+    }
+
+    function findElementByTagClassAndParent(tagName, className, parentNode) {
+        var elements = parentNode.getElementsByTagName(tagName);
+        for (var i in elements) {
+            var element = elements[i];
+
+            // Not 100% correct, but good enough here
+            if (element.className !== undefined && element.className.indexOf(className) >= 0) {
+                return element;
+            }
+        }
+    }
+
+    function trimString(str) {
+        return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+})();
+
+        </script>
+</body>
+</html>

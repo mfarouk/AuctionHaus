@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="vbeliaev-PC" name="myebay1.CustomerIntegrationTests" tests="1" time="0.031" timestamp="2012-04-15T04:30:39">
+  <properties />
+  <testcase classname="myebay1.CustomerIntegrationTests" name="testNonUniqueEmailSave" time="0.031" />
+  <system-out><![CDATA[--Output from testNonUniqueEmailSave--
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+]]></system-out>
+  <system-err><![CDATA[--Output from testNonUniqueEmailSave--
+]]></system-err>
+</testsuite>

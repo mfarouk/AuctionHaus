@@ -1,0 +1,16 @@
+Testsuite: myebay1.ApiControllerTests
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 4.056 sec
+------------- Standard Output ---------------
+--Output from testCreateCustomer--
+--Output from testCreateListing--
+--Output from testCreateBidding--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCreateCustomer--
+--Output from testCreateListing--
+--Output from testCreateBidding--
+------------- ---------------- ---------------
+
+Testcase: testCreateCustomer took 3.401 sec
+Testcase: testCreateListing took 0.249 sec
+Testcase: testCreateBidding took 0.312 sec

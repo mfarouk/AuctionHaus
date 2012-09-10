@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="0" name="BiddingControllerIntegrationTests" package="myebay1" tests="1" time="0.436" timestamp="2012-04-15T04:30:39">
+      <properties />
+
+      <testcase classname="myebay1.BiddingControllerIntegrationTests" name="testInvalidBiddingSave" time="0.436" />
+
+      <system-out><![CDATA[--Output from testInvalidBiddingSave--
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: insert into listing (id, version, date_created, description, end_time, last_updated, name, number_of_notifications, seller_id, starting_bid_price) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testInvalidBiddingSave--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="1" name="BiddingIntegrationTests" package="myebay1" tests="1" time="0.172" timestamp="2012-04-15T04:30:39">
+      <properties />
+
+      <testcase classname="myebay1.BiddingIntegrationTests" name="testBiddingProcess" time="0.172" />
+
+      <system-out><![CDATA[--Output from testBiddingProcess--
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: insert into listing (id, version, date_created, description, end_time, last_updated, name, number_of_notifications, seller_id, starting_bid_price) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: insert into listing (id, version, date_created, description, end_time, last_updated, name, number_of_notifications, seller_id, starting_bid_price) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select listing0_.id as id1_1_, listing0_.version as version1_1_, listing0_.date_created as date3_1_1_, listing0_.description as descript4_1_1_, listing0_.end_time as end5_1_1_, listing0_.last_updated as last6_1_1_, listing0_.name as name1_1_, listing0_.number_of_notifications as number8_1_1_, listing0_.seller_id as seller9_1_1_, listing0_.starting_bid_price as starting10_1_1_, biddings1_.listing_id as listing7_1_3_, biddings1_.id as id3_, biddings1_.id as id2_0_, biddings1_.version as version2_0_, biddings1_.bidder_id as bidder3_2_0_, biddings1_.bidding_price as bidding4_2_0_, biddings1_.date_created as date5_2_0_, biddings1_.last_updated as last6_2_0_, biddings1_.listing_id as listing7_2_0_ from listing listing0_ left outer join bidding biddings1_ on listing0_.id=biddings1_.listing_id where listing0_.id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select bidding0_.id as id2_0_, bidding0_.version as version2_0_, bidding0_.bidder_id as bidder3_2_0_, bidding0_.bidding_price as bidding4_2_0_, bidding0_.date_created as date5_2_0_, bidding0_.last_updated as last6_2_0_, bidding0_.listing_id as listing7_2_0_ from bidding bidding0_ where bidding0_.id=?
+Hibernate: select listing0_.id as id1_1_, listing0_.version as version1_1_, listing0_.date_created as date3_1_1_, listing0_.description as descript4_1_1_, listing0_.end_time as end5_1_1_, listing0_.last_updated as last6_1_1_, listing0_.name as name1_1_, listing0_.number_of_notifications as number8_1_1_, listing0_.seller_id as seller9_1_1_, listing0_.starting_bid_price as starting10_1_1_, biddings1_.listing_id as listing7_1_3_, biddings1_.id as id3_, biddings1_.id as id2_0_, biddings1_.version as version2_0_, biddings1_.bidder_id as bidder3_2_0_, biddings1_.bidding_price as bidding4_2_0_, biddings1_.date_created as date5_2_0_, biddings1_.last_updated as last6_2_0_, biddings1_.listing_id as listing7_2_0_ from listing listing0_ left outer join bidding biddings1_ on listing0_.id=biddings1_.listing_id where listing0_.id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_0_, bidding0_.version as version2_0_, bidding0_.bidder_id as bidder3_2_0_, bidding0_.bidding_price as bidding4_2_0_, bidding0_.date_created as date5_2_0_, bidding0_.last_updated as last6_2_0_, bidding0_.listing_id as listing7_2_0_ from bidding bidding0_ where bidding0_.id=?
+Hibernate: select bidding0_.id as id2_0_, bidding0_.version as version2_0_, bidding0_.bidder_id as bidder3_2_0_, bidding0_.bidding_price as bidding4_2_0_, bidding0_.date_created as date5_2_0_, bidding0_.last_updated as last6_2_0_, bidding0_.listing_id as listing7_2_0_ from bidding bidding0_ where bidding0_.id=?
+Hibernate: select listing0_.id as id1_1_, listing0_.version as version1_1_, listing0_.date_created as date3_1_1_, listing0_.description as descript4_1_1_, listing0_.end_time as end5_1_1_, listing0_.last_updated as last6_1_1_, listing0_.name as name1_1_, listing0_.number_of_notifications as number8_1_1_, listing0_.seller_id as seller9_1_1_, listing0_.starting_bid_price as starting10_1_1_, biddings1_.listing_id as listing7_1_3_, biddings1_.id as id3_, biddings1_.id as id2_0_, biddings1_.version as version2_0_, biddings1_.bidder_id as bidder3_2_0_, biddings1_.bidding_price as bidding4_2_0_, biddings1_.date_created as date5_2_0_, biddings1_.last_updated as last6_2_0_, biddings1_.listing_id as listing7_2_0_ from listing listing0_ left outer join bidding biddings1_ on listing0_.id=biddings1_.listing_id where listing0_.id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select bidding0_.id as id2_0_, bidding0_.version as version2_0_, bidding0_.bidder_id as bidder3_2_0_, bidding0_.bidding_price as bidding4_2_0_, bidding0_.date_created as date5_2_0_, bidding0_.last_updated as last6_2_0_, bidding0_.listing_id as listing7_2_0_ from bidding bidding0_ where bidding0_.id=?
+Hibernate: select bidding0_.id as id2_0_, bidding0_.version as version2_0_, bidding0_.bidder_id as bidder3_2_0_, bidding0_.bidding_price as bidding4_2_0_, bidding0_.date_created as date5_2_0_, bidding0_.last_updated as last6_2_0_, bidding0_.listing_id as listing7_2_0_ from bidding bidding0_ where bidding0_.id=?
+Hibernate: select listing0_.id as id1_1_, listing0_.version as version1_1_, listing0_.date_created as date3_1_1_, listing0_.description as descript4_1_1_, listing0_.end_time as end5_1_1_, listing0_.last_updated as last6_1_1_, listing0_.name as name1_1_, listing0_.number_of_notifications as number8_1_1_, listing0_.seller_id as seller9_1_1_, listing0_.starting_bid_price as starting10_1_1_, biddings1_.listing_id as listing7_1_3_, biddings1_.id as id3_, biddings1_.id as id2_0_, biddings1_.version as version2_0_, biddings1_.bidder_id as bidder3_2_0_, biddings1_.bidding_price as bidding4_2_0_, biddings1_.date_created as date5_2_0_, biddings1_.last_updated as last6_2_0_, biddings1_.listing_id as listing7_2_0_ from listing listing0_ left outer join bidding biddings1_ on listing0_.id=biddings1_.listing_id where listing0_.id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testBiddingProcess--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="2" name="CustomerIntegrationTests" package="myebay1" tests="1" time="0.031" timestamp="2012-04-15T04:30:39">
+      <properties />
+
+      <testcase classname="myebay1.CustomerIntegrationTests" name="testNonUniqueEmailSave" time="0.031" />
+
+      <system-out><![CDATA[--Output from testNonUniqueEmailSave--
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testNonUniqueEmailSave--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="3" name="ListingIntegrationTests" package="myebay1" tests="1" time="0.172" timestamp="2012-04-15T04:30:39">
+      <properties />
+
+      <testcase classname="myebay1.ListingIntegrationTests" name="testListingWithBiddingsSave" time="0.172" />
+
+      <system-out><![CDATA[--Output from testListingWithBiddingsSave--
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: insert into listing (id, version, date_created, description, end_time, last_updated, name, number_of_notifications, seller_id, starting_bid_price) values (null, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: insert into bidding (id, version, bidder_id, bidding_price, date_created, last_updated, listing_id) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+Hibernate: update listing set version=?, date_created=?, description=?, end_time=?, last_updated=?, name=?, number_of_notifications=?, seller_id=?, starting_bid_price=? where id=? and version=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select this_.id as id2_0_, this_.version as version2_0_, this_.bidder_id as bidder3_2_0_, this_.bidding_price as bidding4_2_0_, this_.date_created as date5_2_0_, this_.last_updated as last6_2_0_, this_.listing_id as listing7_2_0_ from bidding this_ where this_.listing_id=?
+Hibernate: select max(bidding0_.bidding_price) as col_0_0_ from bidding bidding0_ where bidding0_.listing_id=?
+Hibernate: select bidding0_.id as id2_, bidding0_.version as version2_, bidding0_.bidder_id as bidder3_2_, bidding0_.bidding_price as bidding4_2_, bidding0_.date_created as date5_2_, bidding0_.last_updated as last6_2_, bidding0_.listing_id as listing7_2_ from bidding bidding0_ where bidding0_.bidding_price=? and bidding0_.listing_id=? limit ?
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testListingWithBiddingsSave--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="4" name="ApiControllerTests" package="myebay1" tests="3" time="4.056" timestamp="2012-04-15T04:30:16">
+      <properties />
+
+      <testcase classname="myebay1.ApiControllerTests" name="testCreateCustomer" time="3.401" />
+
+      <testcase classname="myebay1.ApiControllerTests" name="testCreateListing" time="0.249" />
+
+      <testcase classname="myebay1.ApiControllerTests" name="testCreateBidding" time="0.312" />
+
+      <system-out><![CDATA[--Output from testCreateCustomer--
+--Output from testCreateListing--
+--Output from testCreateBidding--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCreateCustomer--
+--Output from testCreateListing--
+--Output from testCreateBidding--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="5" name="BiddingControllerTests" package="myebay1" tests="2" time="0.811" timestamp="2012-04-15T04:30:20">
+      <properties />
+
+      <testcase classname="myebay1.BiddingControllerTests" name="testValidBiddingSave" time="0.577" />
+
+      <testcase classname="myebay1.BiddingControllerTests" name="testInvalidBiddingSave" time="0.187" />
+
+      <system-out><![CDATA[--Output from testValidBiddingSave--
+--Output from testInvalidBiddingSave--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testValidBiddingSave--
+--Output from testInvalidBiddingSave--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="6" name="BiddingServiceTests" package="myebay1" tests="1" time="2.324" timestamp="2012-04-15T04:30:21">
+      <properties />
+
+      <testcase classname="myebay1.BiddingServiceTests" name="testBidOnCompletedItem" time="2.277" />
+
+      <system-out><![CDATA[--Output from testBidOnCompletedItem--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testBidOnCompletedItem--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="7" name="BiddingTests" package="myebay1" tests="1" time="0.093" timestamp="2012-04-15T04:30:23">
+      <properties />
+
+      <testcase classname="myebay1.BiddingTests" name="testRequiredProperties" time="0.046" />
+
+      <system-out><![CDATA[--Output from testRequiredProperties--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testRequiredProperties--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="8" name="Complete_listingJobTests" package="myebay1" tests="1" time="0.062" timestamp="2012-04-15T04:30:23">
+      <properties />
+
+      <testcase classname="myebay1.Complete_listingJobTests" name="testSomething" time="0.0" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="9" name="CustomerControllerTests" package="myebay1" tests="3" time="0.608" timestamp="2012-04-15T04:30:23">
+      <properties />
+
+      <testcase classname="myebay1.CustomerControllerTests" name="testCustomerWithBiddingDelete" time="0.281" />
+
+      <testcase classname="myebay1.CustomerControllerTests" name="testCustomerWithListingDelete" time="0.125" />
+
+      <testcase classname="myebay1.CustomerControllerTests" name="testCustomerWithoutListingsAndBiddingsDelete" time="0.124" />
+
+      <system-out><![CDATA[--Output from testCustomerWithBiddingDelete--
+--Output from testCustomerWithListingDelete--
+--Output from testCustomerWithoutListingsAndBiddingsDelete--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCustomerWithBiddingDelete--
+--Output from testCustomerWithListingDelete--
+--Output from testCustomerWithoutListingsAndBiddingsDelete--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="10" name="CustomerServiceTests" package="myebay1" tests="1" time="0.047" timestamp="2012-04-15T04:30:24">
+      <properties />
+
+      <testcase classname="myebay1.CustomerServiceTests" name="testSomething" time="0.0" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="11" name="CustomerTests" package="myebay1" tests="4" time="0.203" timestamp="2012-04-15T04:30:24">
+      <properties />
+
+      <testcase classname="myebay1.CustomerTests" name="testCustomerMissingProperty" time="0.062" />
+
+      <testcase classname="myebay1.CustomerTests" name="testCustomerInvalidEmailSave" time="0.047" />
+
+      <testcase classname="myebay1.CustomerTests" name="testPasswordLength" time="0.031" />
+
+      <testcase classname="myebay1.CustomerTests" name="testValidCustomerSave" time="0.016" />
+
+      <system-out><![CDATA[--Output from testCustomerMissingProperty--
+--Output from testCustomerInvalidEmailSave--
+--Output from testPasswordLength--
+--Output from testValidCustomerSave--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testCustomerMissingProperty--
+--Output from testCustomerInvalidEmailSave--
+--Output from testPasswordLength--
+--Output from testValidCustomerSave--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="12" name="ListingControllerTests" package="myebay1" tests="1" time="0.25" timestamp="2012-04-15T04:30:24">
+      <properties />
+
+      <testcase classname="myebay1.ListingControllerTests" name="testRedirectToCreateBidding" time="0.187" />
+
+      <system-out><![CDATA[--Output from testRedirectToCreateBidding--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testRedirectToCreateBidding--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="13" name="ListingServiceTests" package="myebay1" tests="1" time="0.063" timestamp="2012-04-15T04:30:24">
+      <properties />
+
+      <testcase classname="myebay1.ListingServiceTests" name="testSomething" time="0.016" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="14" name="ListingUnitTests" package="myebay1" tests="7" time="0.266" timestamp="2012-04-15T04:30:24">
+      <properties />
+
+      <testcase classname="myebay1.ListingUnitTests" name="testRequiredProperties" time="0.047" />
+
+      <testcase classname="myebay1.ListingUnitTests" name="testOptionalDescription" time="0.031" />
+
+      <testcase classname="myebay1.ListingUnitTests" name="testSellerProperty" time="0.032" />
+
+      <testcase classname="myebay1.ListingUnitTests" name="testDescriptionLength" time="0.015" />
+
+      <testcase classname="myebay1.ListingUnitTests" name="testListingNameLength" time="0.015" />
+
+      <testcase classname="myebay1.ListingUnitTests" name="testWinnerField" time="0.031" />
+
+      <testcase classname="myebay1.ListingUnitTests" name="testEndTime" time="0.031" />
+
+      <system-out><![CDATA[--Output from testRequiredProperties--
+--Output from testOptionalDescription--
+--Output from testSellerProperty--
+--Output from testDescriptionLength--
+--Output from testListingNameLength--
+--Output from testWinnerField--
+--Output from testEndTime--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testRequiredProperties--
+--Output from testOptionalDescription--
+--Output from testSellerProperty--
+--Output from testDescriptionLength--
+--Output from testListingNameLength--
+--Output from testWinnerField--
+--Output from testEndTime--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="15" name="NotificationControllerTests" package="myebay1" tests="1" time="0.172" timestamp="2012-04-15T04:30:25">
+      <properties />
+
+      <testcase classname="myebay1.NotificationControllerTests" name="testSomething" time="0.141" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="vbeliaev-PC" id="16" name="OnNotificationServiceTests" package="myebay1" tests="1" time="0.016" timestamp="2012-04-15T04:30:25">
+      <properties />
+
+      <testcase classname="myebay1.OnNotificationServiceTests" name="testSomething" time="0.016" />
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

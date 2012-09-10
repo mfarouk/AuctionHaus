@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="vbeliaev-PC" name="myebay1.BiddingTests" tests="1" time="0.093" timestamp="2012-04-15T04:30:23">
+  <properties />
+  <testcase classname="myebay1.BiddingTests" name="testRequiredProperties" time="0.046" />
+  <system-out><![CDATA[--Output from testRequiredProperties--
+]]></system-out>
+  <system-err><![CDATA[--Output from testRequiredProperties--
+]]></system-err>
+</testsuite>

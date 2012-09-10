@@ -1,0 +1,7 @@
+--Output from testRequiredProperties--
+--Output from testOptionalDescription--
+--Output from testSellerProperty--
+--Output from testDescriptionLength--
+--Output from testListingNameLength--
+--Output from testWinnerField--
+--Output from testEndTime--

@@ -1,0 +1,3 @@
+--Output from testCreateCustomer--
+--Output from testCreateListing--
+--Output from testCreateBidding--

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="vbeliaev-PC" name="myebay1.BiddingServiceTests" tests="1" time="2.324" timestamp="2012-04-15T04:30:21">
+  <properties />
+  <testcase classname="myebay1.BiddingServiceTests" name="testBidOnCompletedItem" time="2.277" />
+  <system-out><![CDATA[--Output from testBidOnCompletedItem--
+]]></system-out>
+  <system-err><![CDATA[--Output from testBidOnCompletedItem--
+]]></system-err>
+</testsuite>

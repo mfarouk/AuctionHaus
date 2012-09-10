@@ -1,0 +1,3 @@
+--Output from testCustomerWithBiddingDelete--
+--Output from testCustomerWithListingDelete--
+--Output from testCustomerWithoutListingsAndBiddingsDelete--

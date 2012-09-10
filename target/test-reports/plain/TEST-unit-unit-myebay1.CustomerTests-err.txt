@@ -1,0 +1,4 @@
+--Output from testCustomerMissingProperty--
+--Output from testCustomerInvalidEmailSave--
+--Output from testPasswordLength--
+--Output from testValidCustomerSave--

@@ -1,0 +1,16 @@
+Testsuite: myebay1.CustomerControllerTests
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.608 sec
+------------- Standard Output ---------------
+--Output from testCustomerWithBiddingDelete--
+--Output from testCustomerWithListingDelete--
+--Output from testCustomerWithoutListingsAndBiddingsDelete--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testCustomerWithBiddingDelete--
+--Output from testCustomerWithListingDelete--
+--Output from testCustomerWithoutListingsAndBiddingsDelete--
+------------- ---------------- ---------------
+
+Testcase: testCustomerWithBiddingDelete took 0.281 sec
+Testcase: testCustomerWithListingDelete took 0.125 sec
+Testcase: testCustomerWithoutListingsAndBiddingsDelete took 0.124 sec

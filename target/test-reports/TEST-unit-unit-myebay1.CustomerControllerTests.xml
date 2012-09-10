@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="vbeliaev-PC" name="myebay1.CustomerControllerTests" tests="3" time="0.608" timestamp="2012-04-15T04:30:23">
+  <properties />
+  <testcase classname="myebay1.CustomerControllerTests" name="testCustomerWithBiddingDelete" time="0.281" />
+  <testcase classname="myebay1.CustomerControllerTests" name="testCustomerWithListingDelete" time="0.125" />
+  <testcase classname="myebay1.CustomerControllerTests" name="testCustomerWithoutListingsAndBiddingsDelete" time="0.124" />
+  <system-out><![CDATA[--Output from testCustomerWithBiddingDelete--
+--Output from testCustomerWithListingDelete--
+--Output from testCustomerWithoutListingsAndBiddingsDelete--
+]]></system-out>
+  <system-err><![CDATA[--Output from testCustomerWithBiddingDelete--
+--Output from testCustomerWithListingDelete--
+--Output from testCustomerWithoutListingsAndBiddingsDelete--
+]]></system-err>
+</testsuite>

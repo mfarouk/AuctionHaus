@@ -1,0 +1,14 @@
+Testsuite: myebay1.CustomerIntegrationTests
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.031 sec
+------------- Standard Output ---------------
+--Output from testNonUniqueEmailSave--
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+Hibernate: insert into customer (id, version, date_created, email, last_updated, password, role) values (null, ?, ?, ?, ?, ?, ?)
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.date_created as date3_0_0_, this_.email as email0_0_, this_.last_updated as last5_0_0_, this_.password as password0_0_, this_.role as role0_0_ from customer this_ where this_.email=?
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testNonUniqueEmailSave--
+------------- ---------------- ---------------
+
+Testcase: testNonUniqueEmailSave took 0.031 sec

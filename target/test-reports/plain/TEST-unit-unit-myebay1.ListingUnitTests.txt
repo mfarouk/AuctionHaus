@@ -1,0 +1,28 @@
+Testsuite: myebay1.ListingUnitTests
+Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.266 sec
+------------- Standard Output ---------------
+--Output from testRequiredProperties--
+--Output from testOptionalDescription--
+--Output from testSellerProperty--
+--Output from testDescriptionLength--
+--Output from testListingNameLength--
+--Output from testWinnerField--
+--Output from testEndTime--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testRequiredProperties--
+--Output from testOptionalDescription--
+--Output from testSellerProperty--
+--Output from testDescriptionLength--
+--Output from testListingNameLength--
+--Output from testWinnerField--
+--Output from testEndTime--
+------------- ---------------- ---------------
+
+Testcase: testRequiredProperties took 0.047 sec
+Testcase: testOptionalDescription took 0.031 sec
+Testcase: testSellerProperty took 0.032 sec
+Testcase: testDescriptionLength took 0.015 sec
+Testcase: testListingNameLength took 0.015 sec
+Testcase: testWinnerField took 0.031 sec
+Testcase: testEndTime took 0.031 sec

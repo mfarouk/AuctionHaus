@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="vbeliaev-PC" name="myebay1.ApiControllerTests" tests="3" time="4.056" timestamp="2012-04-15T04:30:16">
+  <properties />
+  <testcase classname="myebay1.ApiControllerTests" name="testCreateCustomer" time="3.401" />
+  <testcase classname="myebay1.ApiControllerTests" name="testCreateListing" time="0.249" />
+  <testcase classname="myebay1.ApiControllerTests" name="testCreateBidding" time="0.312" />
+  <system-out><![CDATA[--Output from testCreateCustomer--
+--Output from testCreateListing--
+--Output from testCreateBidding--
+]]></system-out>
+  <system-err><![CDATA[--Output from testCreateCustomer--
+--Output from testCreateListing--
+--Output from testCreateBidding--
+]]></system-err>
+</testsuite>

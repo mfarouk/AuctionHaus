@@ -1,0 +1,13 @@
+Testsuite: myebay1.BiddingControllerTests
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.811 sec
+------------- Standard Output ---------------
+--Output from testValidBiddingSave--
+--Output from testInvalidBiddingSave--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testValidBiddingSave--
+--Output from testInvalidBiddingSave--
+------------- ---------------- ---------------
+
+Testcase: testValidBiddingSave took 0.577 sec
+Testcase: testInvalidBiddingSave took 0.187 sec

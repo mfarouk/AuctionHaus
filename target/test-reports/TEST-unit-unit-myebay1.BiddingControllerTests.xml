@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="vbeliaev-PC" name="myebay1.BiddingControllerTests" tests="2" time="0.811" timestamp="2012-04-15T04:30:20">
+  <properties />
+  <testcase classname="myebay1.BiddingControllerTests" name="testValidBiddingSave" time="0.577" />
+  <testcase classname="myebay1.BiddingControllerTests" name="testInvalidBiddingSave" time="0.187" />
+  <system-out><![CDATA[--Output from testValidBiddingSave--
+--Output from testInvalidBiddingSave--
+]]></system-out>
+  <system-err><![CDATA[--Output from testValidBiddingSave--
+--Output from testInvalidBiddingSave--
+]]></system-err>
+</testsuite>

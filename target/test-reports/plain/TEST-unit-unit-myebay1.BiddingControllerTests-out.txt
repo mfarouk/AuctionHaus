@@ -1,0 +1,2 @@
+--Output from testValidBiddingSave--
+--Output from testInvalidBiddingSave--

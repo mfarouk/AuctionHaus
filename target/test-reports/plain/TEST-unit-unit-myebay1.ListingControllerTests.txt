@@ -1,0 +1,10 @@
+Testsuite: myebay1.ListingControllerTests
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.25 sec
+------------- Standard Output ---------------
+--Output from testRedirectToCreateBidding--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testRedirectToCreateBidding--
+------------- ---------------- ---------------
+
+Testcase: testRedirectToCreateBidding took 0.187 sec

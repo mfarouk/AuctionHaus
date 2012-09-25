@@ -4,7 +4,7 @@ package myebay1
 class Complete_listingJob {
 
 
-    def timeout = 90000l // execute job once in 90 seconds
+    def timeout = 9000000l // execute job once in 900 seconds
 
     def execute() {
 

@@ -15,7 +15,13 @@ environments {
     development {
         dataSource {
             dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:mem:devDb;MVCC=TRUE"  //change to file to persist
+            pooled = true
+            url = "jdbc:oracle:thin:@myebay.ccsv8kp5ifmu.us-east-1.rds.amazonaws.com:1521:myebay"
+            driverClassName = "oracle.jdbc.OracleDriver"
+            username = "admin"
+            password = "password"
+
+            //url = "jdbc:h2:mem:devDb;MVCC=TRUE"  //change to file to persist
         }
     }
     test {
